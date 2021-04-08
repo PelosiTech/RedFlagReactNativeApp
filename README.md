@@ -1,5 +1,33 @@
-# RedFlagReactNativeApp
-Red Flag Dating App
+<div align="center">
+   <h1>Account Creation Process</h1>
+   <a href="https://reactnative.gallery/xcarpentier/e0d8eff7-0dfb-4823-8576-a615267354cc">
+    <img alt="react-native-redflag-account-creation" src="https://thumbs.gfycat.com/CautiousSpanishAnhinga-size_restricted.gif" width="260" height="510" />
+   </a>
+   <h1>Signing In</h1>
+   <a href="https://reactnative.gallery/xcarpentier/e0d8eff7-0dfb-4823-8576-a615267354cc">
+    <img alt="react-native-redflag-account-creation" src="https://thumbs.gfycat.com/AngryCostlyAmphiuma-size_restricted.gif" width="260" height="510" />
+   </a>
+   <h1>Editing Account</h1>
+   <a href="https://reactnative.gallery/xcarpentier/512c304b-00f4-4d9e-a9a7-94dca48e79dd">
+    <img alt="react-native-redflag-account-editing" src="https://media4.giphy.com/media/oIhcy8vQveEXIs5ndc/giphy.gif" width="260" height="510" />
+ </a>
+   <h1>Viewing other account's</h1>
+   <a href="https://reactnative.gallery/xcarpentier/512c304b-00f4-4d9e-a9a7-94dca48e79dd">
+    <img alt="react-native-redflag-account-viewing" src="https://thumbs.gfycat.com/EnergeticQueasyHypsilophodon-size_restricted.gif" width="260" height="510" />
+ </a>
+   <h1>Matching with someone</h1>
+   <a href="https://reactnative.gallery/xcarpentier/512c304b-00f4-4d9e-a9a7-94dca48e79dd">
+    <img alt="react-native-redflag-account-viewing" src="https://thumbs.gfycat.com/OptimisticAmazingKoodoo-size_restricted.gif" width="260" height="510" />
+ </a>
+   <h1>Messaging and sending red flags</h1>
+   <a href="https://reactnative.gallery/xcarpentier/512c304b-00f4-4d9e-a9a7-94dca48e79dd">
+    <img alt="react-native-redflag-account-viewing" src="https://thumbs.gfycat.com/InsistentDefiniteAstrangiacoral-size_restricted.gif" width="260" height="510" />
+ </a>
+   <h1>Other user</h1>
+   <a href="https://reactnative.gallery/xcarpentier/512c304b-00f4-4d9e-a9a7-94dca48e79dd">
+    <img alt="react-native-redflag-account-viewing" src="https://thumbs.gfycat.com/HideousFittingAndeancat-size_restricted.gif" width="260" height="510" />
+ </a>
+</div>
 
 **Front End**
 
@@ -32,22 +60,22 @@ bottomTabNavigator with React Navigation v5, Typescript tabs
     *   Took advantage of packages and used React Native Gifted Chat to hook up our backend message data for a more up to date messaging feel
 *   RedFlag Matching Screen
     *   The bread and butter to our app, Users can send RedFlag secrets in real time to their matched user’s. They also can start a MUTUAL redflag share, 
-        *   We updated our database to initiate a mutual share request with the other user and connection to chatroom
-        *   The other user is notified of the mutual share and has the option of accepting or declining
+        **   We updated our database to initiate a mutual share request with the other user and connection to chatroom
+        **   The other user is notified of the mutual share and has the option of accepting or declining
 *   Profile Screen
     *   View/Edit Screen
-        *   User can do live edits to their profile and see exactly how it will look to other users on the dating app
-        *   They can save the profile changes or delete when exiting the page
+        **   User can do live edits to their profile and see exactly how it will look to other users on the dating app
+        **   They can save the profile changes or delete when exiting the page
             *   Handled by useLayoutEffect
     *   Preference Screen
-        *   User can update their preference for matching with other users
+        **   User can update their preference for matching with other users
             *   Same School Filter
             *   Min/Max age Filter
             *   Distance Filter
             *   Gender Preference Filter
 *   Recommendation Screen
     *   Grabs users in database based off of your user preferences that runs through an algorithm that’s based on interests
-        *   If a users interests match more than 40% of current users interests show them on the recommendation page
+        **   If a users interests match more than 40% of current users interests show them on the recommendation page
 *   LikesYou Screen
     *   Using GraphQL we pull users who like you and show them
 *   Sentry.io built in to our react native app for error handling on the app store
@@ -85,8 +113,8 @@ For our backend we used AWS Amplify/AppSync for a GraphQL API linked with Dynamo
 *   We then integrated PubNub Real Time in-app Chats instead of amazons solution for future development and bigger use cases
 *   Custom subscription Listeners
     *   We have custom subscriptions listeners for real time in app experience
-        *   Creating/Deleting/Updating Matches
-        *   Creating/Deleting/Updating Chatrooms
+        **   Creating/Deleting/Updating Matches
+        **   Creating/Deleting/Updating Chatrooms
 *   We created algorithms that handled when matches needed to be created for the best real time experience as well as when chatrooms needed to be created. 
     *   We cleaned our databases based on this as well. Deleting information in DB when new chatrooms were created and old match data did not need to be used.
     *   Additionality we added a report system linking to a custom chatroom that we can see with the reported usersId, chatroomId and what they did… ‘sexual harassment etc…’ which we can verify by looking at that chatroomsId and ban them. 
